@@ -13,7 +13,7 @@ namespace TDDCommunication
         {
             
 
-            return int.MaxValue;
+            return 0;
         }
         
 
