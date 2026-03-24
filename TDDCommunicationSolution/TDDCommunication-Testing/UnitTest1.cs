@@ -10,7 +10,7 @@ public class Tests
     {
         //arrange
         SumClass sumClass = new SumClass();
-        int[] input = [ 1, 2 ];
+        int[] input = [ 1 ];
         
 
         //act

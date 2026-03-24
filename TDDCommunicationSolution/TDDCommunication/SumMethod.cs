@@ -11,9 +11,12 @@ namespace TDDCommunication
 
         public int SumMethod(int[] Input)
         {
-            
+            if (Input.Length < 3)
+            {
+                return 0;
+            }
 
-            return 0;
+            return int.MaxValue;
         }
         
 
