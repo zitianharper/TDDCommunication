@@ -10,8 +10,22 @@ namespace TDDCommunication
     public class SumClass
     {
 
+        
+
+        public int[] indexKiller(int[] numbers)
+        {
+            Array.Sort(numbers);
+            var list = numbers.ToList();
+            list.RemoveAt( 0 );
+            list.RemoveAt(list.Count - 1);
+            int[] input = list.ToArray();
+            return input;
+        }
+
         public int SumMethod(int[] input)
         {
+            Array.Sort(input);
+
             if (input.Length < 3)
             {
                 return 0;
@@ -19,12 +33,14 @@ namespace TDDCommunication
 
             if (input.Length == 3)
             {
-                Array.Sort(input);
+                
                 return input[1];
             }
 
-            return int.MaxValue;
+           return input.Sum();
+            
         }
+        
         
 
     }
