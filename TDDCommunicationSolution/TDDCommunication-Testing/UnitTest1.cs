@@ -10,7 +10,7 @@ public class Tests
     {
         //arrange
         SumClass sumClass = new SumClass();
-        int[] input = [ 1 ];
+        int[] input = [ 1 , 2 ];
         
 
         //act
@@ -18,5 +18,22 @@ public class Tests
 
         //assert
         output.ShouldBe(0);
+    
+    }
+
+
+    [Test]
+    public static void ShouldReturnIndex1_WhenArrayContainsThreeInts()
+    {
+        //arrange
+        SumClass sumClass = new SumClass();
+        int[] input = [1, 5, 3];
+
+
+        //act
+        int output = sumClass.SumMethod(input);
+
+        //assert
+        output.ShouldBe(3);
     }
 }   
